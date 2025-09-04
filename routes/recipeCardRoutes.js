@@ -3,7 +3,7 @@ const router = express.Router();
 const Recipe = require("../model/recipeModel"); // adjust path if needed
 
 // Get all recipes (but only card data)
-router.get("/recipesCard", async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const recipes = await Recipe.find({}, "title image description");
     res.json(recipes);

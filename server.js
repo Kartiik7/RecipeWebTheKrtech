@@ -45,7 +45,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/recipesFilter', recipeFilter);
 app.use("/api/suggestions", suggestionRoutes);
 app.use("/api/recipes", recipeRoutes);
-app.use("/api", recipeCardRoutes); // mounts /api/recipesCard
+app.use("/api/recipesCard", recipeCardRoutes); 
 
 // Test route
 app.get('/', (req, res) => {
